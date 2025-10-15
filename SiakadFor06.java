@@ -5,7 +5,7 @@ public class SiakadFor06 {
         double nilai, tertinggi = 0, terendah = 100;
 /*
         for (int i = 1; i <= 10; i++) {
-          System.out.print("Masukkan nilai ke-" + i + ": ");
+          System.out.print("Masukkan nilai mahasiswa ke-" + i + ": ");
             nilai = sc.nextDouble();
             if (nilai > tertinggi) {
                 tertinggi = nilai;
@@ -14,11 +14,11 @@ public class SiakadFor06 {
                 terendah = nilai;
             }  
         }
-*/
 
+*/
         int mhs = 10, lulus = 0, tidakLulus = 0;
         for (int i = 1; i <= mhs; i++) {
-          System.out.print("Masukkan nilai ke-" + i + "\t: ");
+          System.out.print("Masukkan nilai mahasiswa ke-" + i + "\t\t: ");
             nilai = sc.nextDouble();
             if (nilai > tertinggi) {
                 tertinggi = nilai;
@@ -33,9 +33,10 @@ public class SiakadFor06 {
             }
       }
 
-        System.out.println("\nNilai tertinggi adalah\t: " + tertinggi);
-        System.out.println("Nilai terendah adalah\t: " + terendah);
-        System.out.println("\nJumlah mahasiswa yang lulus\t\t: " + lulus);
+        System.out.println("\nNilai tertinggi adalah\t\t\t: " + tertinggi);
+        System.out.println("Nilai terendah adalah\t\t\t: " + terendah);
+        System .out.println("\nJumlah mahasiswa yang lulus\t\t: " + lulus);
         System.out.println("Jumlah mahasiswa yang tidak lulus\t: " + tidakLulus);
+
     }
 }
