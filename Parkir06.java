@@ -3,21 +3,17 @@ import java.util.Scanner;
 public class Parkir06 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int jenis, durasi;
-        int total = 0;
+        int jenis, durasi, total = 0;
 
         do {
-            System.out.print("Masukkan jenis kendaraan (1 Mobil, 2 Motor, 0 Keluar): ");
+            System.out.print("Masukkan jenis kendaraan (1 Mobil, 2 Motor, 0 Keluar)\t: ");
             jenis = sc.nextInt();
-
             if (jenis == 0) {
                 break;
             }
-
             if (jenis == 1 || jenis == 2) {
-                System.out.print("Masukkan durasi parkir (jam): ");
+                System.out.print("Masukkan durasi parkir (jam)\t\t\t\t: ");
                 durasi = sc.nextInt();
-
                 if (durasi > 5) {
                     total += 12500;
                 } else if (jenis == 1) {
@@ -31,6 +27,6 @@ public class Parkir06 {
 
         } while (jenis != 0);
 
-        System.out.println("Total pembayaran parkir: Rp " + total);
+        System.out.println("Total pembayaran parkir\t\t\t\t\t: Rp. " + total);
     }
 }
